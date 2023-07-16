@@ -33,19 +33,19 @@ with st.sidebar:
 
 # Bridging a connection with MongoDB Atlas and Creating a new database(youtube_data)
 client = pymongo.MongoClient("mongodb://localhost:27017")
-db = client.youtubescrap
+db = client.****
 
 # CONNECTING WITH MYSQL DATABASE
 mydb = mysql.connector.connect(host="127.0.0.1",
                    user="root",
-                   password="divya",
-                   database= "youtubedata"
+                   password="",
+                   database= ""
                    )
 mycursor = mydb.cursor(buffered=True)
 
 
 # BUILDING CONNECTION WITH YOUTUBE API
-api_key = "AIzaSyAn6pzsG_j3hOjzZa2HMWWts0lvauyhPpY"
+api_key = ""
 youtube = build('youtube','v3',developerKey=api_key)
 
 
